@@ -1,6 +1,5 @@
 pandas
 numpy
-regex
 nltk
 wordcloud
 matplotlib
