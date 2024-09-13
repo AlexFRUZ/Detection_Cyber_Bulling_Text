@@ -5,7 +5,7 @@ from keras.preprocessing.sequence import pad_sequences
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QLineEdit, QPushButton
 import pickle
 
-model = load_model(r'D:\Train\cyberbullying_classifier_model1.h5')
+model = load_model('./cyberbullying_classifier_model.h5')
 
 with open(r'D:\Train\tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
@@ -33,7 +33,7 @@ class CyberbullyingClassifierApp(QWidget):
         super().__init__()
 
         self.setWindowTitle('Cyberbullying Classifier')
-        self.setGeometry(100, 100, 400, 300)
+        self.setGeometry(600, 200, 800, 600)
 
         self.layout = QVBoxLayout()
         self.label = QLabel("Enter your text to classify:")
