@@ -9,12 +9,12 @@ This project involves creating a text classifier to identify types of cyberbully
 1. **Data Preprocessing**:
    - `cyberbullying_tweets.csv`: Original dataset containing tweets and their cyberbullying labels.
    - The preprocessing steps involve cleaning the text (removing URLs, punctuation, and numbers), tokenizing, removing stopwords, stemming, and lemmatizing.
-   - Processed data is saved to `cyberbullying_tweets1.csv`.
+   - Processed data is saved to `processed_cyberbullying_tweets.csv`.
 
 2. **Model Training**:
    - The model is trained using a Bidirectional LSTM architecture.
    - The dataset is split into training and testing sets, and the model is evaluated using accuracy, precision, recall, and F1 score.
-   - The trained model and tokenizer are saved as `cyberbullying_classifier_model1.h5` and `tokenizer.pickle`, respectively.
+   - The trained model and tokenizer are saved as `cyberbullying_classifier_model.h5` and `tokenizer.pickle`, respectively.
 
 3. **GUI Application**:
    - A PyQt5 application allows users to input text and receive predictions and class probabilities from the classifier.
@@ -51,4 +51,5 @@ This project involves creating a text classifier to identify types of cyberbully
 - `cyberbullying_tweets1.csv`: Preprocessed dataset.
 - `cyberbullying_classifier_model.h5`: Trained model.
 - `tokenizer.pickle`: Tokenizer for text preprocessing.
-- `Recognitions.py`: PyQt5 application for user interaction.
+- `model.py`: Script for defining and training the model.
+- `recognitions.py`: PyQt5 application for user interaction.
