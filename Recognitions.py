@@ -7,7 +7,7 @@ import pickle
 
 model = load_model('./cyberbullying_classifier_model.h5')
 
-with open(r'D:\Train\tokenizer.pickle', 'rb') as handle:
+with open('./tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 max_length = 50
