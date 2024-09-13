@@ -11,7 +11,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
 
-data = pd.read_csv(r'D:\Train\Cyber_Bulling\cyberbullying_tweets1.csv')
+data = pd.read_csv('./processed_cyberbullying_tweets.csv')
 
 data['tweet_text'] = data['tweet_text'].astype(str)
 
@@ -59,7 +59,7 @@ model.fit(X_train, y_train, epochs=3, batch_size=64, validation_data=(X_test, y_
 accuracy = model.evaluate(X_test, y_test)
 print(f'Test Accuracy: {accuracy[1]}')
 
-model.save('cyberbullying_classifier_model1.h5')
+model.save('cyberbullying_classifier_mode.h5')
 with open('tokenizer.pickle', 'wb') as handle:
 	pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
