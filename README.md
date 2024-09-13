@@ -49,7 +49,7 @@ This project involves creating a text classifier to identify types of cyberbully
 
 - `cyberbullying_tweets.csv`: Original dataset.
 - `cyberbullying_tweets1.csv`: Preprocessed dataset.
-- `cyberbullying_classifier_model.h5`: Trained model.
+- `cyberbullying_classifier_mode.h5`: Trained model.
 - `tokenizer.pickle`: Tokenizer for text preprocessing.
 - `model.py`: Script for defining and training the model.
 - `recognitions.py`: PyQt5 application for user interaction.
